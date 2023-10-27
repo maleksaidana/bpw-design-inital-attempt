@@ -1,0 +1,142 @@
+body{
+    font-family: 'Oswald';
+    letter-spacing: .1rem;
+     background-image: url("/images/wallpaperflare.com_wallpaper\ \(1\).jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin: 0;
+     padding: 0;
+}
+
+.container{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.904);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+/*HEADER*/ 
+
+.header-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: fit-content;
+}
+
+.margin-header{
+    width: 90%;
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;
+    color: #FFFFFF;
+    width: 100%;
+    background-color: black;
+    white-space: nowrap;
+
+    
+}
+
+
+.left-header, .right-header{
+    display: flex;
+    gap: 5rem;
+    opacity: 0.8;
+    align-items: center;
+
+
+}
+
+.logo img{
+    width: 120px;
+}
+
+.item{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    gap: 2rem;
+
+
+}
+
+.item-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+.item-profile img{
+    width: 35px;
+    width: 35px;
+    border-radius: 50%;
+
+}
+
+.add-diamond{
+    background-color: #5268FC;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header span:hover{
+    cursor: pointer;
+    color: #5268FC;
+}
+
+/*HEADER*/ 
+
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+    width: 90%;
+    color: white;
+}
+
+.main-cover img{
+    width: 35rem;
+}
+
+.main-content h3{
+    color:#5268FC
+}
+
+.button{
+    background-color: #5268FC;
+    border-radius: 15px;
+    width: 100px;
+    padding: 10px 40px 10px 40px;
+    text-align: center;
+
+}
+
+.btn-white{
+    color: #5268FC;
+    background-color: white;
+
+
+}
+
+.buttons{
+    display:flex;
+    gap: 2rem;
+}

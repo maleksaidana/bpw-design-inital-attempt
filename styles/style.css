@@ -48,7 +48,7 @@ body{
 
 .left-header, .right-header{
     display: flex;
-    gap: 5rem;
+    gap: 3rem;
     opacity: 0.8;
     align-items: center;
 

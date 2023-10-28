@@ -14,51 +14,68 @@
 </header>
 
 <body>
-    <div class="container">
-        <div class="header-container">
-            <div class="margin-header">
-                <div class="header">
-                    <div class="left-header">
-                        <div class="logo"><img src="images/icon white version.png"></div>
-                        <div><span> MATCHES </span></div>
-                        <div><span> LEADERBOARD </span></div>
-                        <div><span> GAMES </span></div>
-
-                    </div>
-
-                    <div class="right-header">
-                        <div class="item-profile">
-                            <img src="images/person.jpg" />
-                            <span> Malek Saidna </span>
-                        </div>
-                        <div class="item">
-                            <span> <i class="fa-regular fa-gem"></i> 20 coins </span>
-                            <div class="add-diamond"><i class="fa-solid fa-plus"></i></div>
-                        </div>
-                        <div><span> <i class="fa-regular fa-bell"></i> </span></div>
-                        <div><span> <i class="fa-solid fa-right-from-bracket"></i></span></div>
-
-                    </div>
-
-                </div>
+    <div class="top">
+        <div id="chat" class="chat">
+            <div class="chat-header">
+                <span> LIVE CHAT </span>
+                <span> <i class="fa-regular fa-user"></i></span>
             </div>
         </div>
-        <div class="main">
-            <div class="main-content">
-                <h3> Discover Gaming with Real Cash Rewards</h3>
-                <h1> JOIN NOW TO BATTLE AND EARN REAL CASH REWARDS !</h1>
-                <div class="buttons">
-                    <div class="button"> Create Game</div>
-                    <div class="button btn-white"> Join Game</div>
+        <div class="container">
+            <div class="header-container">
+                <div class="margin-header">
+                    <div class="header">
+                        <div class="left-header">
+                            <div class="logo"><img src="images/icon white version.png"></div>
+                            <div><span> MATCHES </span></div>
+                            <div><span> LEADERBOARD </span></div>
+                            <div><span> GAMES </span></div>
+                        </div>
+
+                        <div class="right-header">
+                            <div class="item-profile">
+                                <img src="images/person.jpg" />
+                                <span> Malek Saidna </span>
+                            </div>
+                            <div class="item">
+                                <span> <i class="fa-regular fa-gem"></i> 20 coins </span>
+                                <div class="add-diamond"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                            <div><span> <i class="fa-regular fa-bell"></i> </span></div>
+                            <div id="toggle-chat"><span> <i class="fa-brands fa-rocketchat"></i></span></div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="main-cover">
-                <img src="images/Group 4.png" />
+            <div class="main">
+                <div class="main-content">
+                    <h3> Discover Gaming with Real Cash Rewards</h3>
+                    <h1> JOIN NOW TO BATTLE AND EARN REAL CASH REWARDS !</h1>
+                    <div class="buttons">
+                        <div class="button"> Create Game</div>
+                        <div class="button btn-white"> Join Game</div>
+                    </div>
+                </div>
+                <div class="main-cover">
+                    <img src="images/Group 4.png" />
+                </div>
             </div>
+
+
         </div>
-
-
     </div>
 </body>
 
 </html>
+
+<script>
+    document.getElementById("toggle-chat").addEventListener("click", () => {
+
+        let chat = document.getElementById("chat");
+        console.log("DFZSDF",chat.style.width)
+        !chat.style.width || chat.style.width == "0%"  ? chat.style.width  = "20%" : chat.style.width = "0%";
+
+    });
+
+</script>

@@ -17,6 +17,8 @@ body{
     background-color: rgba(0, 0, 0, 0.904);
     height: 100%;
     position:fixed;
+    margin: 0;
+    padding: 0; 
 
  }
 
@@ -24,10 +26,9 @@ body{
     width: 0%;
     overflow: hidden;
     background-color: #242E7066;
-    margin: 1rem;
     border-top-left-radius: 80px 80px;
     transition: width 0.5s;
-
+    box-sizing: border-box;
  }
 
  .chat-header{
@@ -42,10 +43,6 @@ body{
 
  }
 
- #toggle-chat:hover + .chat{
-    width: 20%;
-
- }
 /*TOP*/
 
 .container{
@@ -139,23 +136,32 @@ body{
 /*HEADER*/ 
 
 .content{
-    width: 90%;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .content::-webkit-scrollbar {
-    width: 1px; /* Set the width of the scrollbar */
-    background-color: #F5F5F5; /* Set the background color of the scrollbar */
-    position: absolute;
-    right: 0; /* Position the scrollbar on the left of the element */
+    width: 5px;
+
  }
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
 
 .main{
     display: flex;
     align-items: center;
     justify-content:space-between;
 
-    width: 100%;
+    width: 90%;
     color: white;
 }
 

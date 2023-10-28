@@ -15,7 +15,8 @@ body{
     display: flex;
     flex-direction: row-reverse;
     background-color: rgba(0, 0, 0, 0.904);
-    height: 100vh;
+    height: 100%;
+    position:fixed;
 
  }
 
@@ -137,13 +138,24 @@ body{
 
 /*HEADER*/ 
 
+.content{
+    width: 90%;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+    width: 1px; /* Set the width of the scrollbar */
+    background-color: #F5F5F5; /* Set the background color of the scrollbar */
+    position: absolute;
+    right: 0; /* Position the scrollbar on the left of the element */
+ }
 
 .main{
     display: flex;
     align-items: center;
     justify-content:space-between;
 
-    width: 90%;
+    width: 100%;
     color: white;
 }
 
